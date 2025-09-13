@@ -1,0 +1,12 @@
+:root{
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --HubDark: #ff8f00;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Bckgr_divs2: rgba(0, 0, 0, 0.35);
+    --Btn: #000000;
+}
+
+body{
+    background: linear-gradient(to bottom, black 40%, var(--Hub) 60%);
+}
