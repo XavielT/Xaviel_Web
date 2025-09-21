@@ -17,6 +17,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gefika';
+    src: url(../Xaviel_Web/Resources/Fonts/Gefika/Gefika.woff2) format('woff2'),
+         url(../Xaviel_Web/Resources/Fonts/Gefika/Gefika.woff) format('woff'),
+         url(../Xaviel_Web/Resources/Fonts/Gefika/Gefika.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lemon_beach';
+    src: url(../Xaviel_Web/Resources/Fonts/Lemon-beach/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../Xaviel_Web/Resources/Fonts/Work-krow/Work-krow.otf) format('opentype'),
+         url(../Xaviel_Web/Resources/Fonts/Work-krow/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-script';
+    src: url(../Xaviel_Web/Resources/Fonts/Spoiler-Script/Spoilers-Script.woff2) format('woff2'),
+         url(../Xaviel_Web/Resources/Fonts/Spoiler-Script/Spoilers-Script.woff) format('woff'),
+         url(../Xaviel_Web/Resources/Fonts/Spoiler-Script/Spoilers-Script.otf) format('opentype');
+}
 /*------Body------*/
 
 body{
@@ -71,4 +99,64 @@ body{
     text-shadow: 0 0 6px black;
     border-radius: 8px;
     transition: 0.1s;
+}
+
+/*------quien-soy------*/
+#quien-soy{
+    background-color: var(--Bckgr_divs);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    margin: 20px 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quien-soy-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info-title{
+    font-size: 28px;
+    font-style: normal;
+    font-family: 'Gefika', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 6px black;
+    margin-bottom: 10px;
+}
+
+.info-title-span{
+    font-size: 18px;
+    font-family: 'ROLNER', sans-serif;
+    display: block;
+    margin-top: -10px;
+    color: var(--Hub);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.quien-soy-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 16px;
+    /*border: 0px 0px 20px 10px solid rgba(255, 255, 255, 0.571);*/
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.info-text{
+    font-size: 15px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 6px black;
+    font-style: italic;
 }
