@@ -5,6 +5,7 @@
     --Bckgr_divs: rgba(98, 98, 98, 0.3);
     --Bckgr_divs2: rgba(0, 0, 0, 0.35);
     --Btn: #000000;
+    --Btn_Gray: #333333;
 }
 
 /*------Fonts------*/
@@ -159,4 +160,117 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 0 0 6px black;
     font-style: italic;
+}
+
+/*------ Conocimientos -------*/
+#conocimientos{
+    margin-top:80px;
+    margin-bottom: 20px;
+}
+
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--Gray);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    margin: 20px 30px;
+    padding: 20px;
+}
+
+.skill-icon:hover{
+    width: 50px;
+    height: 50px;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+/*------ Proyectos ------*/
+.projects-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--Bckgr_divs);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    margin: 20px 30px;
+    padding: 20px;
+}
+
+.project-card{
+    background-color: var(--Bckgr_divs2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3), 0 12px 40px 0 rgba(255, 255, 255, 0.25);
+    background-color: black;
+}
+
+.project-card > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-card > a:hover{
+    /*text-shadow: 0 0 6px white;*/
+    transition: ease-in-out 0.2s;
+    color: var(--Hub);
+}
+
+.project-card > a > img{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    margin-top: 10px;
+}
+
+.project-card > p{
+    color: white;
+    margin: 8px;
+    text-align: center;
+    justify-content: center;
+}
+
+.rep-btn{
+    background-color: var(--Btn_Gray);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'ROLNER', sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0px 8px 0 rgba(255, 255, 255, 0.2), 0 0px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.rep-btn:hover{
+    background-color: var(--Hub);
+    color: black;
+    box-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.4), 0 0 30px 0 rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
 }
