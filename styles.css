@@ -237,13 +237,13 @@ body{
     gap: 10px;
 }
 
-#x-github-link > .github-svg, #linkedin-link > .linkedin-svg{
+#x-github-link svg, #linkedin-link  svg{
     
     /*fill: white;*/
     display:none;
 }
 
-#x-github-link:hover > .github-svg, #linkedin-link:hover > .linkedin-svg{
+#x-github-link:hover svg, #linkedin-link:hover svg{
     width: 20px;
     /*fill: white;*/
     display: inline-block;
